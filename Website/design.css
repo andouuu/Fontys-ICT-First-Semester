@@ -19,6 +19,7 @@ h3{
     padding: 1px;
   }
   img{
+    border:3px solid  rgb(2, 100, 2);
     display: block;
     margin-left: auto;
     margin-right: auto;
