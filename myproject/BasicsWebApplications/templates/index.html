@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/mystyle.css')}}">
+        <meta http-equiv="refresh" content="10">
+       <title>Time and light level measurement</title> 
+    </head>
+    <body>
+       <p>{{currentTime}}</p> <br>
+       <p>{{lightLevel}}</p>
+      
+       <h1>Last 10 measurements</h1> 
+       <table>
+        <tr>
+            
+            <th>Number</th>
+            
+            <th>Time</th>
+            <th>Light level</th>
+           
+        </tr>
+        {% for i in range(len-1,-1,-1) %}
+            <tr>
+                <td>     {{ i+1 }}.</td>
+                <td>     {{ measurements[i][0] }}</td>
+                <td>
+                    {{ measurements[i][1] }}  
+                </td>
+                {% endfor %}
+            </tr>
+        
+    </table>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Example-F"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Chapter 6"
+	}
+}

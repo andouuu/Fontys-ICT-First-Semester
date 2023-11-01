@@ -37,7 +37,7 @@ def loop():
     global humidity, temperature
     print(humidity, temperature)
     board.displayShow(temperature)
-    time.sleep(0.01)  # Give Firmata some time to handle protocol.
+    time.sleep(2)  # Give Firmata some time to handle protocol.
 
 
 # --------------
